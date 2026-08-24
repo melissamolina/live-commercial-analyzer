@@ -1,0 +1,957 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#070708">
+  <meta name="description" content="Commercial Investment Analyzer™ — evaluate commercial real estate opportunities with HUT Realty and Spartan Capital Group.">
+  <meta property="og:title" content="Commercial Investment Analyzer™">
+  <meta property="og:description" content="Run the numbers. Understand the opportunity. Make a more informed commercial real estate decision.">
+  <meta property="og:type" content="website">
+  <title>Commercial Investment Analyzer™ | HUT Realty + Spartan Capital Group</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+:root{
+  --bg:#070708;--panel:#101013;--panel2:#151519;--line:#29292e;--line2:#393940;
+  --text:#f5f5f5;--muted:#9c9ca4;--red:#c8212d;--red2:#8e111b;--green:#61d38b;
+  --shadow:0 24px 70px rgba(0,0,0,.36);--radius:18px;--max:1240px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Montserrat,Arial,sans-serif;line-height:1.55}
+a{color:inherit}button,input,select,textarea{font:inherit}.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+.site-header{height:78px;position:sticky;top:0;z-index:20;background:rgba(7,7,8,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 max(22px,calc((100vw - var(--max))/2));gap:18px}
+.brand{display:flex;align-items:center;text-decoration:none;min-width:105px}.brand img{max-height:42px;max-width:160px;object-fit:contain}.brand-fallback{display:flex;flex-direction:column;line-height:.9}.brand-fallback b{font-family:"Barlow Condensed",sans-serif;font-size:1.35rem;letter-spacing:.06em}.brand-fallback small{font-size:.52rem;letter-spacing:.2em;color:#bbb}.brand-spartan .brand-fallback small{color:#e3444c}.brand-divider{width:1px;height:35px;background:var(--line2)}.header-cta{margin-left:auto;text-decoration:none;background:var(--red);padding:10px 15px;border-radius:9px;font-size:.78rem;font-weight:700}
+.hero{position:relative;display:flex;align-items:center;overflow:hidden;border-bottom:1px solid var(--line);padding:48px 0 44px}.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:56px 56px;mask-image:linear-gradient(to right,#000,transparent)}.hero-glow{position:absolute;width:600px;height:600px;right:-170px;top:-180px;border-radius:50%;background:radial-gradient(circle,rgba(200,33,45,.22),transparent 66%);filter:blur(12px)}.hero-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:80px;align-items:center;position:relative}.eyebrow,.step-label{text-transform:uppercase;letter-spacing:.18em;font-size:.7rem;color:#e34852;font-weight:700}h1,h2,h3,h4{font-family:"Barlow Condensed",Arial,sans-serif;line-height:1.02;margin:0}h1{font-size:clamp(3.4rem,7vw,6.5rem);max-width:850px;letter-spacing:-.025em}h1 span{color:var(--red)}h2{font-size:clamp(2.5rem,5vw,4rem)}h3{font-size:1.8rem}h4{font-size:1.4rem}.hero-copy{max-width:760px;color:#c8c8cd;font-size:1.1rem}.hero-actions{display:flex;flex-wrap:wrap;gap:20px;align-items:center;margin-top:30px}.btn{border:0;background:linear-gradient(135deg,var(--red),var(--red2));color:white;padding:14px 20px;border-radius:9px;text-decoration:none;font-weight:700;cursor:pointer;display:inline-flex;justify-content:center;align-items:center;box-shadow:0 12px 35px rgba(200,33,45,.18)}.btn:hover{filter:brightness(1.1)}.btn-outline{background:transparent;border:1px solid #555;box-shadow:none}.btn-full{width:100%}.text-link{text-decoration:none;font-weight:600}.microcopy{color:#74747c;font-size:.75rem}.hero-preview{position:relative;background:linear-gradient(145deg,#151519,#0b0b0d);border:1px solid #38383f;border-radius:18px;padding:22px;box-shadow:0 30px 80px rgba(0,0,0,.42);overflow:hidden}
+.hero-preview:after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;right:-100px;top:-120px;background:radial-gradient(circle,rgba(200,33,45,.25),transparent 68%)}
+.preview-top{display:flex;justify-content:space-between;gap:15px;font-size:.63rem;letter-spacing:.12em;color:#8f8f98}.preview-top b{color:#e24b55}.preview-price{font-family:"Barlow Condensed";font-size:3.1rem;font-weight:800;margin:18px 0}.preview-price small{font-family:Montserrat;font-size:.62rem;color:#73737b;font-weight:500}
+.preview-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.preview-grid div{background:#101014;border:1px solid #27272d;border-radius:10px;padding:12px}.preview-grid small{display:block;color:#74747d;font-size:.57rem}.preview-grid strong{font-family:"Barlow Condensed";font-size:1.35rem}.hero-preview>p{color:#8c8c94;font-size:.72rem;margin:15px 0 0}
+.analyzer-section{padding:84px 0;background:linear-gradient(#09090b,#0b0b0e)}.section-heading{max-width:760px;margin-bottom:34px}.section-heading p:last-child{color:var(--muted)}.section-heading.compact{margin-bottom:28px}.software-shell{display:grid;grid-template-columns:370px 1fr;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--shadow);background:var(--panel)}.input-panel{background:#0c0c0f;border-right:1px solid var(--line);padding:25px;display:grid;grid-template-columns:1fr 1fr;gap:14px}.panel-head{display:flex;justify-content:space-between;align-items:flex-start;grid-column:1/-1;margin-bottom:5px}.panel-head h3{margin-top:4px}.ghost-button,.save-button{background:transparent;color:#bbb;border:1px solid var(--line2);border-radius:8px;padding:8px 10px;cursor:pointer;font-size:.72rem}.save-button{color:#ef5962;border-color:rgba(200,33,45,.45)}label{display:grid;gap:7px;font-size:.72rem;color:#b5b5bc;font-weight:600}label.full,.full{grid-column:1/-1}label em{font-style:normal;color:#707078;font-weight:400}input,select,textarea{width:100%;background:#151519;border:1px solid #303037;color:white;border-radius:8px;padding:12px;outline:none}input:focus,select:focus,textarea:focus{border-color:#8f3038;box-shadow:0 0 0 3px rgba(200,33,45,.09)}.money,.suffix{display:flex;align-items:center;background:#151519;border:1px solid #303037;border-radius:8px}.money b,.suffix b{color:#777780;padding:0 0 0 11px}.suffix b{padding:0 11px 0 0}.money input,.suffix input{border:0;background:transparent}.input-panel small{color:#67676f;font-size:.64rem}.privacy{text-align:center;margin:0;color:#66666f!important}.form-error{color:#ff737b;min-height:16px;margin:0;font-size:.72rem}
+.results-panel{padding:28px;min-width:0}.results-top{display:flex;align-items:center;justify-content:space-between;gap:12px}.results-top h3{margin-top:4px}.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin:22px 0}.tab{border:0;background:transparent;color:#85858e;padding:12px 14px;border-bottom:2px solid transparent;cursor:pointer;font-weight:700;font-size:.75rem}.tab.active{color:white;border-color:var(--red)}.tab-panel{display:none}.tab-panel.active{display:block}.metrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.metric{background:var(--panel2);border:1px solid var(--line);border-radius:13px;padding:17px;min-height:120px}.metric span{font-size:.65rem;color:#909098;text-transform:uppercase;letter-spacing:.05em}.metric strong{display:block;font-family:"Barlow Condensed",sans-serif;font-size:2rem;margin:5px 0}.metric small{color:#73737b;font-size:.63rem}.metric.highlight strong{color:var(--green)}.overview-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}.summary-card,.insight-card,.explain-card{border:1px solid var(--line);background:#111115;border-radius:14px;padding:20px}.summary-card dl{margin:15px 0 0}.summary-card dl div{display:flex;justify-content:space-between;gap:15px;padding:9px 0;border-bottom:1px solid #242429;font-size:.75rem}.summary-card dt{color:#8c8c94}.summary-card dd{margin:0;font-weight:700}.summary-card .positive dd{color:var(--green)}.insight-card p{color:#a7a7ae;font-size:.8rem}.signal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}.signal-grid div{background:#17171b;padding:12px;border-radius:9px}.signal-grid span{display:block;color:#777780;font-size:.6rem}.signal-grid strong{font-size:.82rem}.detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.detail-grid article{background:#141418;border:1px solid var(--line);border-radius:12px;padding:18px}.detail-grid span{display:block;color:#85858d;font-size:.68rem}.detail-grid strong{font-family:"Barlow Condensed";font-size:1.9rem}.explain-card{margin-top:14px}.explain-card p{color:#aaaab2;font-size:.8rem}.projection-head{display:flex;justify-content:space-between;gap:24px;align-items:flex-end}.projection-kpis{display:flex;gap:20px}.projection-kpis small{display:block;color:#787880;font-size:.6rem}.projection-kpis strong{font-family:"Barlow Condensed";font-size:1.35rem}.chart-wrap{height:310px;margin:20px 0;border:1px solid var(--line);background:#0d0d10;border-radius:12px;padding:10px}#projectionChart{width:100%;height:100%}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:12px}table{border-collapse:collapse;width:100%;min-width:690px;font-size:.72rem}th,td{text-align:right;padding:11px;border-bottom:1px solid #25252a}th:first-child,td:first-child{text-align:left}th{color:#777780;font-weight:600;background:#111115}.projection-note{color:#6f6f77;font-size:.68rem}.assumption-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}.assumption-list div{display:flex;justify-content:space-between;gap:15px;background:#141418;border:1px solid var(--line);padding:12px 14px;border-radius:9px;font-size:.72rem}.assumption-list span{color:#808088}.results-actions{display:flex;gap:10px;margin-top:20px}.save-status{font-size:.7rem;color:var(--green);min-height:18px}
+.definitions-section{padding:75px 0;background:#f2f2f0;color:#111}.definitions-section .eyebrow{color:#a61923}.definitions-section .section-heading p:last-child{color:#555}.definitions{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.definitions article{border:1px solid #d3d3d0;background:white;border-radius:14px;padding:22px}.definitions article>b{color:#bd1d28}.definitions article h3{margin:7px 0 10px;font-size:1.45rem}.definitions article p{color:#646469;font-size:.78rem}
+.team-section{padding:78px 0}.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.team-card{border:1px solid var(--line);background:var(--panel);border-radius:16px;padding:22px;display:flex;gap:18px;align-items:center}.avatar{width:72px;height:72px;border-radius:50%;display:grid;place-items:center;border:1px solid #5b1c22;background:radial-gradient(circle,#41151a,#111);color:#ef626b;font-family:"Barlow Condensed";font-size:1.6rem;font-weight:800}.team-card span{color:#e34c55;font-size:.65rem;text-transform:uppercase;letter-spacing:.08em}.team-card h3{font-size:1.6rem}.team-card p{color:#9999a1;margin:4px 0}.team-card a{display:inline-block;margin-right:12px;font-size:.72rem;color:#ddd}.consultation-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;margin-top:42px;padding:32px;border:1px solid var(--line);border-radius:18px;background:#0e0e11}.consultation-wrap p{color:#9898a0}.consultation-form{display:grid;grid-template-columns:1fr 1fr;gap:10px}.consultation-form textarea,.consultation-form button{grid-column:1/-1}
+footer{border-top:1px solid var(--line);padding:32px 0;color:#85858d}.footer-grid{display:grid;grid-template-columns:1fr auto auto;gap:30px;align-items:center}.footer-grid p{font-size:.68rem;margin:3px 0}.footer-links{display:flex;gap:20px}.footer-links a{font-size:.7rem}.legal{padding-top:20px;border-top:1px solid #1c1c20;margin-top:20px;font-size:.62rem;color:#65656d}
+dialog{border:1px solid #34343a;border-radius:18px;background:#111114;color:white;max-width:510px;width:calc(100% - 28px);padding:0;box-shadow:0 30px 100px #000}dialog::backdrop{background:rgba(0,0,0,.78);backdrop-filter:blur(4px)}.dialog-card{padding:28px;display:grid;gap:12px;position:relative}.dialog-card h2{font-size:2.4rem}.dialog-card>p{color:#a3a3aa;font-size:.8rem}.dialog-close{position:absolute;right:16px;top:14px;border:0;background:transparent;color:white;font-size:1.7rem;cursor:pointer}.contact-choice{text-decoration:none;border:1px solid var(--line);background:#17171b;padding:14px;border-radius:10px;display:grid}.contact-choice b{color:#d7444d;font-size:.62rem;text-transform:uppercase}.contact-choice strong{font-size:.9rem}.contact-choice span{font-size:.7rem;color:#8b8b93}
+.print-report{display:none}
+@media(max-width:1000px){.hero-inner{grid-template-columns:1fr}.hero-preview{max-width:650px}.software-shell{grid-template-columns:1fr}.input-panel{border-right:0;border-bottom:1px solid var(--line)}.metrics-grid{grid-template-columns:repeat(2,1fr)}.definitions{grid-template-columns:1fr 1fr}.consultation-wrap{grid-template-columns:1fr}.projection-head{align-items:flex-start;flex-direction:column}}
+@media(max-width:650px){.container{width:min(100% - 24px,var(--max))}.site-header{height:68px;padding:0 12px;gap:9px}.brand{min-width:75px}.brand img{max-width:100px;max-height:32px}.brand-fallback b{font-size:1rem}.brand-fallback small{font-size:.42rem}.header-cta{font-size:.66rem;padding:9px 10px}.hero{padding:34px 0 30px}.hero-inner{gap:28px}.preview-grid{grid-template-columns:1fr 1fr}.hero-copy{font-size:.95rem}.analyzer-section{padding:55px 0}.software-shell{border-radius:14px}.input-panel{padding:16px;grid-template-columns:1fr}.input-panel label,.input-panel .full,.panel-head{grid-column:1}.results-panel{padding:16px}.tabs{overflow:auto;white-space:nowrap}.tab{padding:10px}.metrics-grid{grid-template-columns:1fr 1fr}.metric{padding:13px;min-height:105px}.metric strong{font-size:1.65rem}.overview-grid,.team-grid{grid-template-columns:1fr}.signal-grid{grid-template-columns:1fr}.detail-grid{grid-template-columns:1fr 1fr}.projection-kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px}.assumption-list{grid-template-columns:1fr}.definitions{grid-template-columns:1fr}.definitions-section,.team-section{padding:55px 0}.consultation-wrap{padding:20px}.consultation-form{grid-template-columns:1fr}.consultation-form>*{grid-column:1}.results-actions{flex-direction:column}.footer-grid{grid-template-columns:1fr}.footer-links{flex-direction:column;gap:5px}.team-card{align-items:flex-start}.avatar{width:58px;height:58px;flex:0 0 58px}}
+@media print{
+  body>*:not(.print-report){display:none!important}
+  .print-report{display:block!important;color:#111;background:white;font-family:Arial,sans-serif;padding:24px}
+  .print-report h1{font-family:Arial,sans-serif;font-size:28px;color:#111}.print-report h2{font-family:Arial,sans-serif;font-size:18px;color:#b51e29;margin-top:24px}
+  .print-report table{min-width:0;font-size:11px}.print-report th,.print-report td{border:1px solid #ccc;color:#111;background:white;padding:7px}
+  .print-report .report-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.print-report .report-grid div{border:1px solid #ddd;padding:8px}
+  .print-report small{color:#666}.print-report .report-footer{margin-top:30px;border-top:1px solid #ccc;padding-top:12px;font-size:9px;color:#666}
+}
+
+.analysis-celebration{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;border:1px solid rgba(200,33,45,.5);background:linear-gradient(100deg,rgba(200,33,45,.18),rgba(200,33,45,.04));border-radius:13px;padding:14px 16px;margin:-8px 0 16px;opacity:.78;transition:.28s transform,.28s box-shadow,.28s opacity}
+.analysis-celebration.fired{opacity:1;transform:translateY(-2px);box-shadow:0 15px 45px rgba(200,33,45,.17)}
+.celebration-icon{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#c8212d;font-weight:900;box-shadow:0 0 0 7px rgba(200,33,45,.09)}
+.analysis-celebration span{display:block;color:#eb666e;font-size:.57rem;font-weight:800;letter-spacing:.12em}.analysis-celebration strong{display:block;font-family:"Barlow Condensed";font-size:1.25rem}.analysis-celebration p{margin:2px 0 0;color:#97979f;font-size:.68rem}
+.analysis-celebration button{border:0;background:transparent;color:#eee;font-size:.68rem;font-weight:700;cursor:pointer;white-space:nowrap}
+.metric.result-pop{animation:resultPop .5s ease both}@keyframes resultPop{0%{transform:scale(.96);opacity:.4}65%{transform:scale(1.018)}100%{transform:scale(1);opacity:1}}
+
+.blueprint-section{padding:82px 0;background:linear-gradient(180deg,#0c0c0f,#080809);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.blueprint-heading{max-width:920px}.blueprint-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.blueprint-grid article{position:relative;border:1px solid var(--line);border-radius:15px;background:#111114;padding:24px;overflow:hidden}
+.blueprint-grid article>span{position:absolute;right:16px;top:8px;font-family:"Barlow Condensed";font-size:3.4rem;font-weight:800;color:rgba(200,33,45,.12)}
+.blueprint-grid h3{font-size:1.55rem;padding-right:50px}.blueprint-grid p{color:#9c9ca4;font-size:.78rem}
+.blueprint-grid ul{margin:14px 0 0;padding-left:17px;color:#c7c7cc;font-size:.72rem}.blueprint-grid li{margin:5px 0}
+.blueprint-warning{display:grid;grid-template-columns:1fr 1.25fr auto;gap:28px;align-items:center;margin-top:18px;padding:25px;border:1px solid rgba(200,33,45,.4);border-radius:15px;background:linear-gradient(110deg,#1d0c0f,#101013)}
+.blueprint-warning h3{font-size:1.7rem}.blueprint-warning p{color:#a6a6ae;font-size:.78rem}
+
+@media(max-width:1000px){.blueprint-warning{grid-template-columns:1fr}.blueprint-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.analysis-celebration{grid-template-columns:auto 1fr}.analysis-celebration button{grid-column:1/-1;text-align:left;padding:4px 0}.blueprint-grid{grid-template-columns:1fr}.blueprint-section{padding:55px 0}.blueprint-warning{padding:20px}}
+
+
+.single-thanks{min-height:100vh;display:grid;place-items:center;padding:38px 0;background:
+radial-gradient(circle at 75% 20%,rgba(200,33,45,.18),transparent 35%),
+linear-gradient(180deg,#0b0b0d,#070708)}
+.single-thanks[hidden]{display:none!important}
+.thanks-card{width:min(860px,calc(100% - 28px));border:1px solid #34343a;border-radius:22px;background:linear-gradient(145deg,#141418,#0c0c0f);padding:clamp(28px,6vw,64px);box-shadow:0 30px 100px rgba(0,0,0,.45);text-align:center}
+.check{width:68px;height:68px;border-radius:50%;margin:0 auto 20px;display:grid;place-items:center;background:#c8212d;font-size:2rem;font-weight:900;box-shadow:0 0 0 12px rgba(200,33,45,.08)}
+.thanks-card h1{font-size:clamp(3rem,8vw,5.5rem);margin:0}.thanks-card h1 span{color:#c8212d}.thanks-card>p{max-width:680px;margin:16px auto;color:#aaaab2}
+.thanks-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}.thanks-actions button{font:inherit}
+.next-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:34px;text-align:left}.next-grid a{border:1px solid #29292e;background:#111114;border-radius:13px;padding:18px;text-decoration:none}
+.next-grid small{display:block;color:#db4852;text-transform:uppercase;letter-spacing:.09em}.next-grid strong{display:block;font-family:"Barlow Condensed";font-size:1.45rem}.next-grid span{display:block;color:#8f8f97;font-size:.72rem;margin-top:4px}
+.thanks-note{font-size:.68rem!important;color:#6f6f77!important;margin-top:24px!important}
+.single-print-area{display:none}
+@media(max-width:650px){.single-thanks{padding:20px 0}.next-grid{grid-template-columns:1fr}}
+@media print{
+  body>*:not(.single-print-area){display:none!important}
+  .single-print-area{display:block!important;color:#111;background:white;font-family:Arial,sans-serif;padding:24px}
+  .single-print-area h1{font-family:Arial,sans-serif;font-size:28px;color:#111}
+  .single-print-area h2{font-family:Arial,sans-serif;font-size:18px;color:#b51e29;margin-top:24px}
+  .single-print-area table{min-width:0;font-size:11px}
+  .single-print-area th,.single-print-area td{border:1px solid #ccc;color:#111;background:white;padding:7px}
+  .single-print-area .report-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .single-print-area .report-grid div{border:1px solid #ddd;padding:8px}
+  .single-print-area small{color:#666}
+  .single-print-area .report-footer{margin-top:30px;border-top:1px solid #ccc;padding-top:12px;font-size:9px;color:#666}
+}
+
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand brand-hut" href="https://www.hutteam.com/" target="_blank" rel="noopener">
+      <span class="brand-fallback"><b>HUT</b><small>REALTY</small></span>
+    </a>
+
+    <span class="brand-divider" aria-hidden="true"></span>
+
+    <a class="brand brand-spartan" href="https://www.spartanenterprises.com/" target="_blank" rel="noopener">
+      <span class="brand-fallback"><b>SPARTAN</b><small>CAPITAL GROUP</small></span>
+    </a>
+
+    <a class="header-cta" href="#analyzer">Analyze a Deal</a>
+  </header>
+
+  
+  <div hidden>
+    <form name="consultation-request" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="consultation-request">
+      <input name="fullName"><input name="email"><input name="phone"><input name="service"><textarea name="message"></textarea>
+    </form>
+    <form name="investment-report" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="investment-report">
+      <input name="analysisSummary"><input name="fullName"><input name="email"><input name="phone">
+    </form>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+      <div class="container hero-inner">
+        <div>
+          <p class="eyebrow">Commercial Real Estate Decision Tool</p>
+          <h1>Commercial Investment <span>Analyzer™</span></h1>
+          <p class="hero-copy">Run the numbers before you move forward. Evaluate income, financing, cash flow, leverage and projected returns in one place.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#analyzer">Run Investment Analysis</a>
+            <a class="text-link" href="#blueprint">See the Investor Blueprint →</a>
+          </div>
+          <p class="microcopy">No sign-up required to analyze a property.</p>
+        </div>
+
+        <div class="hero-preview" aria-label="Commercial Investment Analyzer preview">
+          <div class="preview-top"><span>LIVE DEAL SNAPSHOT</span><b>ANALYZE →</b></div>
+          <div class="preview-price">$1.25M <small>sample purchase</small></div>
+          <div class="preview-grid">
+            <div><small>NOI</small><strong>$102,090</strong></div>
+            <div><small>CAP RATE</small><strong>8.17%</strong></div>
+            <div><small>DSCR</small><strong>1.12×</strong></div>
+            <div><small>CASH FLOW</small><strong>$10,943</strong></div>
+          </div>
+          <p>Change the assumptions. See what happens to the deal.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="analyzer-section" id="analyzer">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Analyze. Project. Decide.</p>
+          <h2>Know What the Deal Is Doing</h2>
+          <p>Enter the assumptions you know. The analyzer updates the core investment metrics and creates a five-year projection.</p>
+        </div>
+
+        <div class="software-shell">
+          <form id="analysisForm" class="input-panel" novalidate>
+            <div class="panel-head">
+              <div>
+                <span class="step-label">INPUTS</span>
+                <h3>Property & Financing</h3>
+              </div>
+              <button id="resetAnalysis" class="ghost-button" type="button">Reset</button>
+            </div>
+
+            <label class="full">
+              <span>Property / Deal Name <em>optional</em></span>
+              <input id="dealName" type="text" placeholder="Example: Main Street Retail Center">
+            </label>
+
+            <label>
+              <span>Property Type</span>
+              <select id="propertyType">
+                <option>Retail</option>
+                <option>Office</option>
+                <option>Industrial</option>
+                <option>Multifamily</option>
+                <option>Mixed Use</option>
+                <option>Hospitality</option>
+                <option>Self Storage</option>
+                <option>Medical</option>
+                <option>Land</option>
+                <option>Other</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Purchase Price</span>
+              <div class="money"><b>$</b><input id="purchasePrice" type="number" min="1" step="1000" value="1250000" required></div>
+            </label>
+
+            <label>
+              <span>Down Payment</span>
+              <div class="money"><b>$</b><input id="downPayment" type="number" min="0" step="1000" value="250000" required></div>
+              <small id="downPaymentPercent">20.0% down</small>
+            </label>
+
+            <label>
+              <span>Interest Rate</span>
+              <div class="suffix"><input id="interestRate" type="number" min="0" step=".01" value="7.25"><b>%</b></div>
+            </label>
+
+            <label>
+              <span>Amortization</span>
+              <div class="suffix"><input id="amortizationYears" type="number" min="1" max="40" step="1" value="25"><b>yrs</b></div>
+            </label>
+
+            <label>
+              <span>Monthly Rent</span>
+              <div class="money"><b>$</b><input id="monthlyIncome" type="number" min="0" step="100" value="12500" required></div>
+            </label>
+
+            <label>
+              <span>Other Monthly Income</span>
+              <div class="money"><b>$</b><input id="otherIncome" type="number" min="0" step="100" value="0"></div>
+            </label>
+
+            <label>
+              <span>Vacancy / Credit Loss</span>
+              <div class="suffix"><input id="vacancyRate" type="number" min="0" max="100" step=".1" value="5"><b>%</b></div>
+            </label>
+
+            <label>
+              <span>Monthly Operating Expenses</span>
+              <div class="money"><b>$</b><input id="monthlyExpenses" type="number" min="0" step="100" value="3400" required></div>
+              <small>Exclude loan payments.</small>
+            </label>
+
+            <label>
+              <span>Closing Costs</span>
+              <div class="money"><b>$</b><input id="closingCosts" type="number" min="0" step="500" value="25000"></div>
+            </label>
+
+            <label>
+              <span>Initial Improvements / CapEx</span>
+              <div class="money"><b>$</b><input id="initialCapex" type="number" min="0" step="500" value="0"></div>
+            </label>
+
+            <label>
+              <span>Annual Income Growth</span>
+              <div class="suffix"><input id="incomeGrowth" type="number" min="-20" max="50" step=".1" value="3"><b>%</b></div>
+            </label>
+
+            <label>
+              <span>Annual Expense Growth</span>
+              <div class="suffix"><input id="expenseGrowth" type="number" min="-20" max="50" step=".1" value="2.5"><b>%</b></div>
+            </label>
+
+            <label>
+              <span>Exit Cap Rate — Year 5</span>
+              <div class="suffix"><input id="exitCapRate" type="number" min=".1" max="30" step=".05" value="7.5"><b>%</b></div>
+            </label>
+
+            <label>
+              <span>Selling Costs</span>
+              <div class="suffix"><input id="sellingCosts" type="number" min="0" max="20" step=".1" value="2"><b>%</b></div>
+            </label>
+
+            <button class="btn btn-full full" type="submit">Generate Investment Analysis</button>
+            <p id="formError" class="form-error full" role="alert"></p>
+            <p class="privacy full">Calculated locally in your browser. Contact information is not required to see results.</p>
+          </form>
+
+          <section class="results-panel" aria-live="polite">
+            <div class="results-top">
+              <div>
+                <span class="step-label">RESULTS</span>
+                <h3 id="resultsDealName">Investment Analysis</h3>
+              </div>
+              <button id="saveAnalysis" class="save-button" type="button">Save Analysis</button>
+            </div>
+
+            <nav class="tabs" aria-label="Analysis sections">
+              <button class="tab active" data-tab="overview" type="button">Overview</button>
+              <button class="tab" data-tab="financing" type="button">Financing</button>
+              <button class="tab" data-tab="projection" type="button">5-Year</button>
+              <button class="tab" data-tab="assumptions" type="button">Assumptions</button>
+            </nav>
+
+            <div id="analysisCelebration" class="analysis-celebration" aria-live="polite">
+              <div class="celebration-icon">✓</div>
+              <div>
+                <span>YOUR DEAL IS MODELED</span>
+                <strong id="celebrationTitle">Your numbers are ready.</strong>
+                <p id="celebrationText">Review the cash flow, debt coverage and five-year projection below.</p>
+              </div>
+              <button id="viewProjection" type="button">See 5-Year Projection →</button>
+            </div>
+
+            <div class="tab-panel active" data-panel="overview">
+              <div class="metrics-grid">
+                <article class="metric"><span>NOI — Annual</span><strong id="noiValue">$0</strong><small>Income after vacancy & operating expenses</small></article>
+                <article class="metric"><span>Cap Rate</span><strong id="capRateValue">0.00%</strong><small>NOI ÷ purchase price</small></article>
+                <article class="metric"><span>Annual Cash Flow</span><strong id="cashFlowValue">$0</strong><small>NOI after debt service</small></article>
+                <article class="metric highlight"><span>Cash-on-Cash</span><strong id="cocValue">0.00%</strong><small>Cash flow ÷ cash invested</small></article>
+                <article class="metric"><span>DSCR</span><strong id="dscrValue">—</strong><small>NOI ÷ annual debt service</small></article>
+                <article class="metric"><span>LTV</span><strong id="ltvValue">0.00%</strong><small>Loan amount ÷ purchase price</small></article>
+              </div>
+
+              <div class="overview-grid">
+                <article class="summary-card">
+                  <h4>Deal Snapshot</h4>
+                  <dl>
+                    <div><dt>Purchase Price</dt><dd id="sPurchase">$0</dd></div>
+                    <div><dt>Loan Amount</dt><dd id="sLoan">$0</dd></div>
+                    <div><dt>Cash Invested</dt><dd id="sCashInvested">$0</dd></div>
+                    <div><dt>Effective Gross Income</dt><dd id="sEgi">$0</dd></div>
+                    <div><dt>Operating Expenses</dt><dd id="sOpEx">$0</dd></div>
+                    <div class="positive"><dt>Net Operating Income</dt><dd id="sNoi">$0</dd></div>
+                    <div><dt>Annual Debt Service</dt><dd id="sDebt">$0</dd></div>
+                    <div class="positive"><dt>Annual Cash Flow</dt><dd id="sCashFlow">$0</dd></div>
+                  </dl>
+                </article>
+
+                <article class="insight-card">
+                  <span class="step-label">PROFESSIONAL INSIGHT</span>
+                  <h4 id="insightTitle">Enter your assumptions</h4>
+                  <p id="insightText">The analyzer will summarize the relationship between leverage, coverage and cash flow here.</p>
+                  <div class="signal-grid">
+                    <div><span>Debt Coverage</span><strong id="signalDscr">—</strong></div>
+                    <div><span>Leverage</span><strong id="signalLtv">—</strong></div>
+                    <div><span>Break-even Occupancy</span><strong id="breakEvenValue">—</strong></div>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="tab-panel" data-panel="financing">
+              <div class="detail-grid">
+                <article><span>Loan Amount</span><strong id="loanAmountValue">$0</strong></article>
+                <article><span>Monthly P&I</span><strong id="monthlyDebtValue">$0</strong></article>
+                <article><span>Annual Debt Service</span><strong id="annualDebtValue">$0</strong></article>
+                <article><span>Debt Service Coverage</span><strong id="financeDscrValue">—</strong></article>
+                <article><span>Loan-to-Value</span><strong id="financeLtvValue">0.00%</strong></article>
+                <article><span>Cash Required</span><strong id="cashRequiredValue">$0</strong></article>
+              </div>
+              <div class="explain-card">
+                <h4>What these numbers tell you</h4>
+                <p><b>DSCR</b> compares property NOI with annual debt payments. A ratio above 1.00 means the modeled NOI exceeds modeled debt service. <b>LTV</b> shows how much of the purchase is financed.</p>
+              </div>
+            </div>
+
+            <div class="tab-panel" data-panel="projection">
+              <div class="projection-head">
+                <div>
+                  <span class="step-label">FIVE-YEAR PROJECTION</span>
+                  <h4>Income, Cash Flow & Equity</h4>
+                </div>
+                <div class="projection-kpis">
+                  <div><small>Year 5 Value</small><strong id="year5Value">$0</strong></div>
+                  <div><small>Projected Equity</small><strong id="year5Equity">$0</strong></div>
+                  <div><small>5-Year Total ROI</small><strong id="fiveYearRoi">0.00%</strong></div>
+                </div>
+              </div>
+
+              <div class="chart-wrap">
+                <canvas id="projectionChart" width="900" height="350" aria-label="Five year NOI and cash flow projection"></canvas>
+              </div>
+
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Year</th><th>NOI</th><th>Cash Flow</th><th>Est. Value</th><th>Loan Balance</th><th>Equity</th></tr></thead>
+                  <tbody id="projectionRows"></tbody>
+                </table>
+              </div>
+              <p class="projection-note">Projection assumes the income growth, expense growth, exit capitalization rate and selling costs entered. It is an estimate, not a forecast or guarantee.</p>
+            </div>
+
+            <div class="tab-panel" data-panel="assumptions">
+              <div id="assumptionList" class="assumption-list"></div>
+            </div>
+
+            <div class="results-actions">
+              <button id="downloadAnalysis" class="btn" type="button">Download My Analysis</button>
+              <button id="scheduleSession" class="btn btn-outline" type="button">Schedule a Strategy Session</button>
+            </div>
+            <p id="saveStatus" class="save-status" role="status"></p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="definitions-section">
+      <div class="container">
+        <div class="section-heading compact">
+          <p class="eyebrow">Understand the Metrics</p>
+          <h2>Numbers With Context</h2>
+        </div>
+        <div class="definitions">
+          <article><b>NOI</b><h3>Net Operating Income</h3><p>Effective property income after modeled vacancy and operating expenses, before financing costs.</p></article>
+          <article><b>CAP</b><h3>Cap Rate</h3><p>NOI divided by purchase price. Commonly used to compare income-producing commercial properties.</p></article>
+          <article><b>CoC</b><h3>Cash-on-Cash</h3><p>Modeled annual cash flow divided by the initial cash invested in the transaction.</p></article>
+          <article><b>DSCR</b><h3>Debt Coverage</h3><p>NOI divided by modeled annual debt service. It indicates how much income covers the debt payment.</p></article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="blueprint-section" id="blueprint">
+      <div class="container">
+        <div class="section-heading blueprint-heading">
+          <p class="eyebrow">The Commercial Investment Blueprint™</p>
+          <h2>What Smart Investors Verify Before They Buy</h2>
+          <p>This is not a motivational checklist. It is the decision framework behind a serious commercial real estate review: what is producing the income, what can break it, how the debt changes the return, and what price still makes sense when the assumptions get worse.</p>
+        </div>
+
+        <div class="blueprint-grid">
+          <article>
+            <span>01</span>
+            <h3>Define the Investment Thesis</h3>
+            <p>Know the goal before evaluating the property: target cash yield, appreciation strategy, hold period, acceptable leverage, liquidity needs and planned exit.</p>
+            <ul>
+              <li>Target cash-on-cash return</li>
+              <li>Target hold period</li>
+              <li>Value-add vs. stabilized strategy</li>
+              <li>Walk-away return threshold</li>
+            </ul>
+          </article>
+
+          <article>
+            <span>02</span>
+            <h3>Audit the Income — Not Just the Asking Cap Rate</h3>
+            <p>Study the quality and durability of the income. A cap rate means very little if the rent roll or lease expirations are weak.</p>
+            <ul>
+              <li>Rent roll and actual collections</li>
+              <li>Lease expirations and rollover concentration</li>
+              <li>Tenant credit and concentration risk</li>
+              <li>Rent bumps, options and reimbursements</li>
+            </ul>
+          </article>
+
+          <article>
+            <span>03</span>
+            <h3>Normalize the NOI</h3>
+            <p>Rebuild NOI from operating reality instead of accepting the seller's pro forma. Separate recurring expenses from one-time items and add costs the property will actually require.</p>
+            <ul>
+              <li>Taxes and insurance after acquisition</li>
+              <li>Management fees</li>
+              <li>Repairs, reserves and recurring CapEx</li>
+              <li>Vacancy, concessions and bad debt</li>
+            </ul>
+          </article>
+
+          <article>
+            <span>04</span>
+            <h3>Underwrite the Debt</h3>
+            <p>The same property can be attractive or dangerous depending on the financing. Model the debt before deciding what the equity return really is.</p>
+            <ul>
+              <li>LTV / LTC and equity required</li>
+              <li>DSCR and debt yield</li>
+              <li>Interest rate and amortization</li>
+              <li>IO period, recourse, covenants and prepayment</li>
+            </ul>
+          </article>
+
+          <article>
+            <span>05</span>
+            <h3>Verify the Market & Submarket</h3>
+            <p>Compare the property against the actual competitive set—not a broad city average.</p>
+            <ul>
+              <li>Comparable rents and recent sales</li>
+              <li>Vacancy and absorption</li>
+              <li>New supply / development pipeline</li>
+              <li>Employment, traffic, anchors and demand drivers</li>
+            </ul>
+          </article>
+
+          <article>
+            <span>06</span>
+            <h3>Stress-Test the Deal</h3>
+            <p>A base case tells you what happens if you are right. A stress test tells you whether you can survive being wrong.</p>
+            <ul>
+              <li>Vacancy increases 5–10%</li>
+              <li>Expenses rise 10%</li>
+              <li>Interest rate moves higher</li>
+              <li>Exit cap expands 50–100 bps</li>
+            </ul>
+          </article>
+
+          <article>
+            <span>07</span>
+            <h3>Complete Real Due Diligence</h3>
+            <p>The financial model is only one layer. Verify the legal, physical and operational facts before your contingencies expire.</p>
+            <ul>
+              <li>Title, survey, zoning and permits</li>
+              <li>Environmental and property condition</li>
+              <li>Leases, estoppels and service contracts</li>
+              <li>Historical financials, taxes and insurance</li>
+            </ul>
+          </article>
+
+          <article>
+            <span>08</span>
+            <h3>Know Your Maximum Price</h3>
+            <p>Turn the underwriting into a decision: the price that meets your return requirement, the contingencies you need, and the number where you walk away.</p>
+            <ul>
+              <li>Base-case value</li>
+              <li>Downside-case value</li>
+              <li>Maximum offer / walk-away price</li>
+              <li>LOI and diligence protections</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="blueprint-warning">
+          <div>
+            <span class="step-label">THREE NUMBERS THAT CAN LIE BY THEMSELVES</span>
+            <h3>Cap Rate. Cash-on-Cash. Projected ROI.</h3>
+          </div>
+          <p>Each can look impressive while hiding tenant rollover, deferred maintenance, unrealistic rents, underwritten expenses or risky leverage. The blueprint forces the numbers back into context.</p>
+          <a class="btn" href="#analyzer">Stress-Test a Deal</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section" id="contact">
+      <div class="container">
+        <div class="section-heading compact">
+          <p class="eyebrow">When the Numbers Need a Human</p>
+          <h2>Your Commercial Team</h2>
+          <p>Use the analyzer independently. When you want to discuss the property or the financing structure, connect directly with the appropriate professional.</p>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="avatar">MC</div>
+            <div>
+              <span>Commercial Real Estate</span>
+              <h3>Melissa Chaves Molina</h3>
+              <p>HUT Realty</p>
+              <a href="tel:+18139933439">(813) 993-3439</a>
+              <a href="https://www.hutteam.com/" target="_blank" rel="noopener">hutteam.com →</a>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="avatar">CK</div>
+            <div>
+              <span>Commercial Financing</span>
+              <h3>Christopher Kiblin</h3>
+              <p>Spartan Capital Group</p>
+              <a href="tel:+14436685727">(443) 668-5727</a>
+              <a href="https://www.spartanenterprises.com/" target="_blank" rel="noopener">spartanenterprises.com →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="consultation-wrap">
+          <div>
+            <p class="eyebrow">Request a Consultation</p>
+            <h3>Want a Second Set of Eyes on the Opportunity?</h3>
+            <p>Send the basic information and choose whether you need real estate guidance, financing guidance, or a review of your analysis.</p>
+          </div>
+
+          <form class="consultation-form" name="consultation-request" method="POST" action="/?thankyou=consultation" data-netlify="true">
+            <input type="hidden" name="form-name" value="consultation-request">
+            <input name="fullName" placeholder="Full name" required autocomplete="name">
+            <input name="email" type="email" placeholder="Email" required autocomplete="email">
+            <input name="phone" type="tel" placeholder="Phone" autocomplete="tel">
+            <select name="service" required>
+              <option value="">How can we help?</option>
+              <option>Commercial Property Search</option>
+              <option>Commercial Financing</option>
+              <option>Review My Investment Analysis</option>
+              <option>Property and Financing Strategy</option>
+            </select>
+            <textarea name="message" rows="4" placeholder="Tell us about the property or opportunity."></textarea>
+            <button class="btn" type="submit">Request Consultation</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>Commercial Investment Analyzer™</strong>
+        <p>Educational decision-support tool for commercial real estate analysis.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.hutteam.com/" target="_blank" rel="noopener">HUT Realty</a>
+        <a href="https://www.spartanenterprises.com/" target="_blank" rel="noopener">Spartan Capital Group</a>
+      </div>
+      <p>© <span id="currentYear"></span></p>
+    </div>
+    <div class="container legal">This tool provides estimates based solely on information entered by the user. It does not constitute investment, legal, tax, appraisal, brokerage, credit, lending, or financial advice; nor does it constitute a loan approval, commitment, or guarantee of property performance. Verify all assumptions and conduct appropriate due diligence with qualified professionals.</div>
+  </footer>
+
+  <dialog id="downloadDialog">
+    <form id="leadForm" class="dialog-card" name="investment-report" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="investment-report">
+      <input type="hidden" id="analysisSummary" name="analysisSummary">
+      <button id="closeDownloadDialog" class="dialog-close" type="button" aria-label="Close">×</button>
+      <p class="eyebrow">Save Your Analysis</p>
+      <h2>Get Your Investment Report</h2>
+      <p>Your results are already visible. Enter your information only if you want to generate a printable report that you can save as a PDF.</p>
+      <label>Full Name<input id="leadName" name="fullName" required autocomplete="name"></label>
+      <label>Email<input id="leadEmail" name="email" type="email" required autocomplete="email"></label>
+      <label>Phone <em>optional</em><input id="leadPhone" name="phone" type="tel" autocomplete="tel"></label>
+      <button class="btn btn-full" type="submit">Generate My Report</button>
+      <small>On your phone or computer, choose “Save as PDF” from the print screen.</small>
+    </form>
+  </dialog>
+
+  <dialog id="scheduleDialog">
+    <div class="dialog-card">
+      <button id="closeScheduleDialog" class="dialog-close" type="button" aria-label="Close">×</button>
+      <p class="eyebrow">Strategy Session</p>
+      <h2>Who Do You Need?</h2>
+      <a class="contact-choice" href="tel:+18139933439"><b>Commercial Real Estate</b><strong>Melissa Chaves Molina</strong><span>(813) 993-3439</span></a>
+      <a class="contact-choice" href="tel:+14436685727"><b>Commercial Financing</b><strong>Christopher Kiblin</strong><span>(443) 668-5727</span></a>
+      <a class="contact-choice" href="#contact" id="openConsultationForm"><b>Not Sure Yet?</b><strong>Request a Consultation</strong><span>Tell us what you are working on.</span></a>
+    </div>
+  </dialog>
+
+  <section id="printReport" class="print-report" aria-hidden="true"></section>
+
+  <script>
+const $ = (id) => document.getElementById(id);
+const form = $("analysisForm");
+let current = null;
+
+const currency = new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",maximumFractionDigits:0});
+const pct = n => Number.isFinite(n) ? `${n.toFixed(2)}%` : "—";
+const money = n => currency.format(Number.isFinite(n) ? n : 0);
+const num = id => parseFloat($(id).value) || 0;
+
+function loanPayment(principal, annualRate, years){
+  if(principal <= 0) return 0;
+  const n = years * 12;
+  if(n <= 0) return 0;
+  const r = annualRate / 100 / 12;
+  if(r === 0) return principal / n;
+  return principal * (r * Math.pow(1+r,n)) / (Math.pow(1+r,n)-1);
+}
+function loanBalance(principal, annualRate, years, paymentsMade){
+  if(principal <= 0) return 0;
+  const n = years * 12;
+  const r = annualRate / 100 / 12;
+  if(r === 0) return Math.max(0, principal * (1 - paymentsMade/n));
+  const pmt = loanPayment(principal,annualRate,years);
+  return Math.max(0, principal*Math.pow(1+r,paymentsMade) - pmt*((Math.pow(1+r,paymentsMade)-1)/r));
+}
+function calculate(){
+  const purchase = num("purchasePrice");
+  const down = num("downPayment");
+  const rate = num("interestRate");
+  const amort = num("amortizationYears");
+  const rent = num("monthlyIncome");
+  const other = num("otherIncome");
+  const vacancy = Math.min(100,Math.max(0,num("vacancyRate"))) / 100;
+  const opExMonthly = num("monthlyExpenses");
+  const closing = num("closingCosts");
+  const capex = num("initialCapex");
+  const incomeGrowth = num("incomeGrowth")/100;
+  const expenseGrowth = num("expenseGrowth")/100;
+  const exitCap = num("exitCapRate")/100;
+  const saleCost = num("sellingCosts")/100;
+
+  if(purchase <= 0){throw new Error("Enter a purchase price greater than $0.");}
+  if(down < 0 || down > purchase){throw new Error("Down payment must be between $0 and the purchase price.");}
+  if(amort <= 0){throw new Error("Amortization must be greater than 0 years.");}
+  if(exitCap <= 0){throw new Error("Exit cap rate must be greater than 0%.");}
+
+  const loan = Math.max(0,purchase-down);
+  const monthlyDebt = loanPayment(loan,rate,amort);
+  const annualDebt = monthlyDebt*12;
+  const gross = (rent+other)*12;
+  const egi = gross*(1-vacancy);
+  const opEx = opExMonthly*12;
+  const noi = egi-opEx;
+  const cashFlow = noi-annualDebt;
+  const invested = down+closing+capex;
+  const capRate = purchase ? noi/purchase*100 : 0;
+  const coc = invested ? cashFlow/invested*100 : 0;
+  const dscr = annualDebt > 0 ? noi/annualDebt : null;
+  const ltv = purchase ? loan/purchase*100 : 0;
+  const breakEven = gross > 0 ? (opEx+annualDebt)/gross*100 : null;
+
+  const projection = [];
+  let grossY = gross, opExY = opEx;
+  let cumulativeCF = 0;
+  for(let y=1;y<=5;y++){
+    if(y>1){grossY*=1+incomeGrowth;opExY*=1+expenseGrowth;}
+    const egiY = grossY*(1-vacancy);
+    const noiY = egiY-opExY;
+    const cfY = noiY-annualDebt;
+    cumulativeCF += cfY;
+    const valueY = noiY/exitCap;
+    const balY = loanBalance(loan,rate,amort,Math.min(y*12,amort*12));
+    const equityY = valueY-balY;
+    projection.push({year:y,gross:grossY,egi:egiY,opEx:opExY,noi:noiY,cf:cfY,value:valueY,balance:balY,equity:equityY});
+  }
+  const y5 = projection[4];
+  const saleProceeds = y5.value*(1-saleCost)-y5.balance;
+  const totalProfit = cumulativeCF + saleProceeds - invested;
+  const fiveYearRoi = invested ? totalProfit/invested*100 : 0;
+
+  return {purchase,down,rate,amort,rent,other,vacancy,opExMonthly,closing,capex,incomeGrowth,expenseGrowth,exitCap,saleCost,
+    loan,monthlyDebt,annualDebt,gross,egi,opEx,noi,cashFlow,invested,capRate,coc,dscr,ltv,breakEven,projection,saleProceeds,totalProfit,fiveYearRoi,
+    dealName:$("dealName").value.trim(),propertyType:$("propertyType").value};
+}
+function insight(d){
+  let title="Model the risk, not just the return";
+  let notes=[];
+  if(d.dscr === null){notes.push("No modeled debt service is included, so DSCR is not applicable.");}
+  else if(d.dscr < 1){notes.push("Modeled NOI does not fully cover the annual debt service.");}
+  else if(d.dscr < 1.25){notes.push("Debt coverage is positive but relatively tight under the assumptions entered.");}
+  else{notes.push("Modeled NOI provides a stronger cushion over annual debt service.");}
+  if(d.ltv > 80){notes.push("Leverage is high relative to the purchase price.");}
+  else if(d.ltv > 65){notes.push("Leverage is moderate-to-high; financing terms will materially affect cash flow.");}
+  else{notes.push("The modeled loan-to-value is comparatively conservative.");}
+  if(d.cashFlow < 0){title="The current assumptions produce negative cash flow";notes.push("Review pricing, income, expenses, vacancy and financing structure before relying on this scenario.");}
+  else if(d.coc > 12){title="The model shows strong cash yield — verify the assumptions";notes.push("Higher modeled returns deserve extra scrutiny of rent, expenses, vacancy and capital needs.");}
+  else if(d.coc > 0){title="The model is producing positive annual cash flow";notes.push("Test a downside scenario before moving forward.");}
+  return {title,text:notes.join(" ")};
+}
+function celebrateAnalysis(d){
+  const box=$("analysisCelebration");
+  let title="Your numbers are ready.";
+  let text="Review the relationship between cash flow, leverage and debt coverage before making a decision.";
+  if(d.cashFlow < 0){
+    title="This model is flashing a cash-flow warning.";
+    text="Under the assumptions entered, annual cash flow is negative. Open Financing and 5-Year to see what is driving it.";
+  } else if(d.dscr !== null && d.dscr < 1){
+    title="Positive NOI — but debt coverage needs attention.";
+    text="The property produces NOI, but the modeled NOI does not fully cover annual debt service.";
+  } else if(d.cashFlow > 0 && (d.dscr === null || d.dscr >= 1.25)){
+    title="Positive modeled cash flow. Now pressure-test it.";
+    text="The current assumptions produce positive cash flow with stronger modeled debt coverage. Check the 5-year downside variables before you get attached to the deal.";
+  } else if(d.cashFlow > 0){
+    title="The deal is producing modeled cash flow.";
+    text="Now test vacancy, expenses, financing and the exit cap rate to see how durable that cash flow is.";
+  }
+  setText("celebrationTitle",title);
+  setText("celebrationText",text);
+  box.classList.remove("fired");
+  void box.offsetWidth;
+  box.classList.add("fired");
+  document.querySelectorAll(".metric").forEach((el,i)=>{
+    el.classList.remove("result-pop");
+    setTimeout(()=>el.classList.add("result-pop"),i*55);
+  });
+}
+function setText(id,value){$(id).textContent=value}
+function render(d){
+  current=d;
+  $("formError").textContent="";
+  setText("downPaymentPercent",`${d.purchase ? (d.down/d.purchase*100).toFixed(1) : "0.0"}% down`);
+  setText("resultsDealName",d.dealName || `${d.propertyType} Investment Analysis`);
+
+  setText("noiValue",money(d.noi));setText("capRateValue",pct(d.capRate));setText("cashFlowValue",money(d.cashFlow));setText("cocValue",pct(d.coc));
+  setText("dscrValue",d.dscr===null?"N/A":`${d.dscr.toFixed(2)}x`);setText("ltvValue",pct(d.ltv));
+
+  setText("sPurchase",money(d.purchase));setText("sLoan",money(d.loan));setText("sCashInvested",money(d.invested));setText("sEgi",money(d.egi));
+  setText("sOpEx",money(d.opEx));setText("sNoi",money(d.noi));setText("sDebt",money(d.annualDebt));setText("sCashFlow",money(d.cashFlow));
+
+  const ins=insight(d);setText("insightTitle",ins.title);setText("insightText",ins.text);
+  setText("signalDscr",d.dscr===null?"N/A":`${d.dscr.toFixed(2)}x`);setText("signalLtv",pct(d.ltv));setText("breakEvenValue",d.breakEven===null?"—":pct(d.breakEven));
+
+  setText("loanAmountValue",money(d.loan));setText("monthlyDebtValue",money(d.monthlyDebt));setText("annualDebtValue",money(d.annualDebt));
+  setText("financeDscrValue",d.dscr===null?"N/A":`${d.dscr.toFixed(2)}x`);setText("financeLtvValue",pct(d.ltv));setText("cashRequiredValue",money(d.invested));
+
+  const y5=d.projection[4];setText("year5Value",money(y5.value));setText("year5Equity",money(y5.equity));setText("fiveYearRoi",pct(d.fiveYearRoi));
+
+  $("projectionRows").innerHTML=d.projection.map(y=>`<tr><td>Year ${y.year}</td><td>${money(y.noi)}</td><td>${money(y.cf)}</td><td>${money(y.value)}</td><td>${money(y.balance)}</td><td>${money(y.equity)}</td></tr>`).join("");
+
+  const assumptions=[
+    ["Property Type",d.propertyType],["Purchase Price",money(d.purchase)],["Down Payment",money(d.down)],["Interest Rate",pct(d.rate)],
+    ["Amortization",`${d.amort} years`],["Monthly Rent",money(d.rent)],["Other Monthly Income",money(d.other)],["Vacancy / Credit Loss",pct(d.vacancy*100)],
+    ["Monthly Operating Expenses",money(d.opExMonthly)],["Closing Costs",money(d.closing)],["Initial Improvements / CapEx",money(d.capex)],
+    ["Annual Income Growth",pct(d.incomeGrowth*100)],["Annual Expense Growth",pct(d.expenseGrowth*100)],["Exit Cap Rate",pct(d.exitCap*100)],["Selling Costs",pct(d.saleCost*100)]
+  ];
+  $("assumptionList").innerHTML=assumptions.map(([a,b])=>`<div><span>${a}</span><strong>${b}</strong></div>`).join("");
+  drawChart(d.projection);
+}
+function drawChart(rows){
+  const canvas=$("projectionChart"), rect=canvas.getBoundingClientRect();
+  const ratio=window.devicePixelRatio||1;
+  canvas.width=Math.max(700,rect.width*ratio);canvas.height=Math.max(300,rect.height*ratio);
+  const ctx=canvas.getContext("2d");ctx.scale(ratio,ratio);
+  const w=canvas.width/ratio,h=canvas.height/ratio,pad={l:58,r:20,t:28,b:38};
+  ctx.clearRect(0,0,w,h);
+  const vals=rows.flatMap(r=>[r.noi,r.cf]);let min=Math.min(0,...vals),max=Math.max(1,...vals);const range=max-min||1;
+  ctx.font="11px Montserrat, sans-serif";ctx.strokeStyle="#28282e";ctx.fillStyle="#74747c";ctx.lineWidth=1;
+  for(let i=0;i<=4;i++){let y=pad.t+(h-pad.t-pad.b)*i/4;ctx.beginPath();ctx.moveTo(pad.l,y);ctx.lineTo(w-pad.r,y);ctx.stroke();let v=max-range*i/4;ctx.fillText(currency.format(v),5,y+4);}
+  const x=i=>pad.l+(w-pad.l-pad.r)*(i/(rows.length-1||1));const y=v=>pad.t+(max-v)/range*(h-pad.t-pad.b);
+  rows.forEach((r,i)=>ctx.fillText(`Y${r.year}`,x(i)-6,h-12));
+  function line(key,stroke){ctx.strokeStyle=stroke;ctx.lineWidth=2.5;ctx.beginPath();rows.forEach((r,i)=>{const X=x(i),Y=y(r[key]);i?ctx.lineTo(X,Y):ctx.moveTo(X,Y)});ctx.stroke();rows.forEach((r,i)=>{ctx.fillStyle=stroke;ctx.beginPath();ctx.arc(x(i),y(r[key]),3.5,0,Math.PI*2);ctx.fill()})}
+  line("noi","#cf2935");line("cf","#d8d8dc");
+  ctx.fillStyle="#cf2935";ctx.fillRect(w-165,12,10,3);ctx.fillStyle="#aaaab0";ctx.fillText("NOI",w-148,16);ctx.fillStyle="#d8d8dc";ctx.fillRect(w-102,12,10,3);ctx.fillStyle="#aaaab0";ctx.fillText("Cash Flow",w-85,16);
+}
+function update(){
+  try{render(calculate());}catch(e){$("formError").textContent=e.message;}
+}
+form.addEventListener("submit",e=>{
+  e.preventDefault();
+  update();
+  if(current){
+    celebrateAnalysis(current);
+    document.querySelector(".results-panel").scrollIntoView({behavior:"smooth",block:"start"});
+  }
+});
+form.querySelectorAll("input,select").forEach(el=>el.addEventListener("input",()=>{clearTimeout(el._t);el._t=setTimeout(update,120)}));
+$("resetAnalysis").addEventListener("click",()=>{form.reset();$("dealName").value="";update()});
+document.querySelectorAll(".tab").forEach(btn=>btn.addEventListener("click",()=>{
+  document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));document.querySelectorAll(".tab-panel").forEach(x=>x.classList.remove("active"));
+  btn.classList.add("active");document.querySelector(`[data-panel="${btn.dataset.tab}"]`).classList.add("active");
+  if(btn.dataset.tab==="projection"&&current) setTimeout(()=>drawChart(current.projection),30);
+}));
+$("viewProjection").addEventListener("click",()=>{
+  const btn=document.querySelector('.tab[data-tab="projection"]');
+  if(btn) btn.click();
+  setTimeout(()=>document.querySelector('[data-panel="projection"]').scrollIntoView({behavior:"smooth",block:"start"}),40);
+});
+$("saveAnalysis").addEventListener("click",()=>{
+  if(!current) return; localStorage.setItem("commercialInvestmentAnalysis",JSON.stringify({savedAt:new Date().toISOString(),inputs:{
+    dealName:$("dealName").value,propertyType:$("propertyType").value,purchasePrice:$("purchasePrice").value,downPayment:$("downPayment").value,
+    interestRate:$("interestRate").value,amortizationYears:$("amortizationYears").value,monthlyIncome:$("monthlyIncome").value,otherIncome:$("otherIncome").value,
+    vacancyRate:$("vacancyRate").value,monthlyExpenses:$("monthlyExpenses").value,closingCosts:$("closingCosts").value,initialCapex:$("initialCapex").value,
+    incomeGrowth:$("incomeGrowth").value,expenseGrowth:$("expenseGrowth").value,exitCapRate:$("exitCapRate").value,sellingCosts:$("sellingCosts").value
+  }}));$("saveStatus").textContent="Analysis saved on this device.";setTimeout(()=>$("saveStatus").textContent="",3000);
+});
+const saved=localStorage.getItem("commercialInvestmentAnalysis");
+if(saved){try{const s=JSON.parse(saved);Object.entries(s.inputs||{}).forEach(([k,v])=>{if($(k))$(k).value=v})}catch(e){}}
+$("downloadAnalysis").addEventListener("click",()=>{$("downloadDialog").showModal()});
+$("closeDownloadDialog").addEventListener("click",()=>{$("downloadDialog").close()});
+$("scheduleSession").addEventListener("click",()=>{$("scheduleDialog").showModal()});
+$("closeScheduleDialog").addEventListener("click",()=>{$("scheduleDialog").close()});
+$("openConsultationForm").addEventListener("click",()=>{$("scheduleDialog").close()});
+$("leadForm").addEventListener("submit",async e=>{
+  e.preventDefault();
+  if(!current) update();
+  if(!e.currentTarget.reportValidity()) return;
+  $("analysisSummary").value=JSON.stringify(current);
+  const data=new URLSearchParams(new FormData(e.currentTarget)).toString();
+
+  const reportHTML=createReportHTML(current,$("leadName").value);
+  sessionStorage.setItem("cia_report_html",reportHTML);
+  sessionStorage.setItem("cia_report_deal",current.dealName || `${current.propertyType} Opportunity`);
+
+  try{
+    await fetch("/",{
+      method:"POST",
+      headers:{"Content-Type":"application/x-www-form-urlencoded"},
+      body:data
+    });
+  }catch(err){
+    console.warn("Lead form submission could not be confirmed before redirect.",err);
+  }
+  window.location.href="/?thankyou=report";
+});
+function createReportHTML(d,name){
+  const ins=insight(d);
+  const rows=d.projection.map(y=>`<tr><td>Year ${y.year}</td><td>${money(y.noi)}</td><td>${money(y.cf)}</td><td>${money(y.value)}</td><td>${money(y.balance)}</td><td>${money(y.equity)}</td></tr>`).join("");
+  return `<h1>Commercial Investment Analysis Report</h1><p><b>${d.dealName||d.propertyType+" Opportunity"}</b><br><small>Prepared for ${name||"Client"} · ${new Date().toLocaleDateString()}</small></p>
+  <h2>Investment Metrics</h2><div class="report-grid">
+    <div><b>NOI</b><br>${money(d.noi)}</div><div><b>Cap Rate</b><br>${pct(d.capRate)}</div><div><b>Annual Cash Flow</b><br>${money(d.cashFlow)}</div><div><b>Cash-on-Cash</b><br>${pct(d.coc)}</div>
+    <div><b>DSCR</b><br>${d.dscr===null?"N/A":d.dscr.toFixed(2)+"x"}</div><div><b>LTV</b><br>${pct(d.ltv)}</div><div><b>Loan Amount</b><br>${money(d.loan)}</div><div><b>Cash Invested</b><br>${money(d.invested)}</div>
+  </div><h2>Professional Insight</h2><p><b>${ins.title}</b><br>${ins.text}</p><h2>Five-Year Projection</h2>
+  <table><thead><tr><th>Year</th><th>NOI</th><th>Cash Flow</th><th>Est. Value</th><th>Loan Balance</th><th>Equity</th></tr></thead><tbody>${rows}</tbody></table>
+  <h2>Year 5 Snapshot</h2><div class="report-grid"><div><b>Projected Value</b><br>${money(d.projection[4].value)}</div><div><b>Projected Equity</b><br>${money(d.projection[4].equity)}</div><div><b>5-Year Total ROI</b><br>${pct(d.fiveYearRoi)}</div><div><b>Break-even Occupancy</b><br>${d.breakEven===null?"—":pct(d.breakEven)}</div></div>
+  <div class="report-footer">Educational estimate based solely on user-entered assumptions. Not investment, appraisal, legal, tax, brokerage, credit, lending, or financial advice. Financing and investment outcomes are not guaranteed. HUT Realty: hutteam.com · Spartan Capital Group: spartanenterprises.com</div>`;
+}
+function buildPrintReport(d,name){
+  $("printReport").innerHTML=createReportHTML(d,name);
+}
+$("currentYear").textContent=new Date().getFullYear();
+window.addEventListener("resize",()=>{if(current)drawChart(current.projection)});
+update();
+
+
+(function(){
+  const params = new URLSearchParams(window.location.search);
+  const thanks = params.get("thankyou");
+  if(!thanks) return;
+
+  const mainParts = Array.from(document.body.children).filter(el =>
+    el.id !== "singleThankYou" &&
+    el.id !== "singlePrintArea" &&
+    el.tagName !== "SCRIPT"
+  );
+  mainParts.forEach(el => el.style.display = "none");
+
+  const section = document.getElementById("singleThankYou");
+  section.hidden = false;
+
+  const eyebrow = document.getElementById("singleThanksEyebrow");
+  const title = document.getElementById("singleThanksTitle");
+  const copy = document.getElementById("singleThanksCopy");
+  const printBtn = document.getElementById("singlePrintReportButton");
+  const printArea = document.getElementById("singlePrintArea");
+
+  if(thanks === "consultation"){
+    eyebrow.textContent = "REQUEST RECEIVED";
+    title.innerHTML = 'Thank You. <span>We Have It.</span>';
+    copy.textContent = "Your consultation request was submitted. You can return to the analyzer anytime and keep testing the opportunity.";
+    printBtn.style.display = "none";
+  } else if(thanks === "report"){
+    const report = sessionStorage.getItem("cia_report_html");
+    if(report){
+      printArea.innerHTML = report;
+    } else {
+      printBtn.style.display = "none";
+      copy.textContent = "Thank you. Your information was received. Return to the analyzer anytime to run another opportunity.";
+    }
+  }
+
+  printBtn.addEventListener("click",()=>{
+    const report = sessionStorage.getItem("cia_report_html");
+    if(report){
+      printArea.innerHTML = report;
+      window.print();
+    }
+  });
+})();
+
+</script>
+
+  <section id="singleThankYou" class="single-thanks" hidden>
+    <div class="thanks-card">
+      <div class="check">✓</div>
+      <p class="eyebrow" id="singleThanksEyebrow">ANALYSIS SAVED</p>
+      <h1 id="singleThanksTitle">Your Next Move Is <span>Clearer.</span></h1>
+      <p id="singleThanksCopy">Your information was received. Your analysis is ready, and you can save a printable copy below.</p>
+
+      <div class="thanks-actions">
+        <button id="singlePrintReportButton" class="btn" type="button">Open / Save My Analysis</button>
+        <a class="btn btn-outline" href="/#analyzer">Analyze Another Deal</a>
+      </div>
+
+      <div class="next-grid">
+        <a href="tel:+18139933439">
+          <small>Commercial Real Estate</small>
+          <strong>Melissa Chaves Molina</strong>
+          <span>Discuss the property, market, offer or acquisition strategy.</span>
+        </a>
+        <a href="tel:+14436685727">
+          <small>Commercial Financing</small>
+          <strong>Christopher Kiblin</strong>
+          <span>Discuss financing structure, debt terms and capital options.</span>
+        </a>
+      </div>
+
+      <p class="thanks-note">The Commercial Investment Analyzer™ is an educational decision-support tool. Results are estimates based on the assumptions entered and are not an investment or lending recommendation.</p>
+    </div>
+  </section>
+
+  <section id="singlePrintArea" class="single-print-area"></section>
+
+</body>
+</html>
